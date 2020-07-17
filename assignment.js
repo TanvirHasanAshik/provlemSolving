@@ -62,3 +62,19 @@ var floor = brickCalculator(11);
 console.log(floor);
 /*_____________________________________________*/
 
+
+/*__________________Last Problem__________________*/
+
+function tinyFriend(friends){
+    var small = friends[0];
+    for(var i = 0; i < friends.length; i++){
+        var element = friends[i]
+        if(  element.length < small.length){
+            var small = element;
+        }
+    }
+    return small;
+}
+
+var friendName = ["Tanvir", "Hasan", "Ashik", "Emon"];
+console.log(tinyFriend(friendName));
